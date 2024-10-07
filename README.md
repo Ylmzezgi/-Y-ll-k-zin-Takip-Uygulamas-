@@ -2,8 +2,9 @@
 
 ![kayıt ol](https://github.com/user-attachments/assets/97bab667-c164-4566-99d5-0f2936bc1d3e)
 
-![kullanıcı bilgileri](https://github.com/user-attachments/assets/afe9e2a7-650e-48a2-9735-0128f55dfbc2)
+![kullanıcı bilgisi](https://github.com/user-attachments/assets/4ab91bea-9161-4e09-b84a-141594bfbd05)
 
 ![çıkış yap](https://github.com/user-attachments/assets/2e263c91-6f55-4907-8809-624011c95aee)
 
 ![pie chart](https://github.com/user-attachments/assets/e4c059fa-8091-4613-94eb-15ba218a63b4)
+

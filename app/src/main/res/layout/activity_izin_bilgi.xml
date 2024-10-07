@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".izinBilgi">
+
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="349dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="12dp"
+        android:text="adSoyad"
+        app:layout_constraintBottom_toTopOf="@+id/emailText"
+        app:layout_constraintEnd_toEndOf="@+id/emailText"
+        app:layout_constraintStart_toStartOf="@+id/datePickerTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="347dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="19dp"
+        android:text="email"
+        app:layout_constraintBottom_toTopOf="@+id/izinBilgiText"
+        app:layout_constraintEnd_toEndOf="@+id/izinBilgiText"
+        app:layout_constraintStart_toStartOf="@+id/datePickerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+
+    <TextView
+        android:id="@+id/izinBilgiText"
+        android:layout_width="350dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="12dp"
+        android:text="işe başlama tarihi"
+        app:layout_constraintBottom_toTopOf="@+id/izitext"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/datePickerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <TextView
+        android:id="@+id/izitext"
+        android:layout_width="351dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="25dp"
+        android:text="hak edilen izin günü"
+        app:layout_constraintBottom_toTopOf="@+id/datePickerTextView"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/emailText"
+        app:layout_constraintTop_toBottomOf="@+id/izinBilgiText" />
+
+
+    <Button
+        android:id="@+id/izinTalepButon"
+        android:layout_width="107dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="izinTalepOnClick"
+        android:text="izin talebi oluştur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dosyaYukle" />
+
+    <TextView
+        android:id="@+id/datePickerTextView"
+        android:layout_width="353dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="26dp"
+        android:text="İzin isteyeceğiniz tarih aralığını seçiniz"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/izitext" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="352dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="29dp"
+        android:text="talep edilen izin gün"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/datePickerTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datePickerTextView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="353dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="21dp"
+        android:text="kalan izin gün : "
+        app:layout_constraintBottom_toTopOf="@+id/dosyaYukle"
+        app:layout_constraintEnd_toEndOf="@+id/datePickerTextView"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/dosyaYukle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="47dp"
+        android:onClick="dosyaYükleOnClick"
+        android:text="Sğlık raporu yükle"
+        app:layout_constraintBottom_toTopOf="@+id/izinTalepButon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

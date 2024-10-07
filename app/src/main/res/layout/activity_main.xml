@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/profilButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:onClick="butonOnClick"
+        android:text="profil bilgi"
+        app:layout_constraintBottom_toBottomOf="@+id/girisButon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/girisButon" />
+
+    <Button
+        android:id="@+id/girisButon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="220dp"
+        android:onClick="girişOnClick"
+        android:text="giriş yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profilButon" />
+
+    <Button
+        android:id="@+id/Kayıtbuton"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="kayıtOnClick"
+        android:text="kayıt ol"
+        app:layout_constraintBottom_toTopOf="@+id/çıkışButon"
+        app:layout_constraintEnd_toEndOf="@+id/profilButon"
+        app:layout_constraintStart_toStartOf="@+id/profilButon"
+        app:layout_constraintTop_toBottomOf="@+id/profilButon" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:onClick="reclerOnclick"
+        android:text="recycler"
+        app:layout_constraintStart_toStartOf="@+id/girisButon"
+        app:layout_constraintTop_toBottomOf="@+id/girisButon" />
+
+    <Button
+        android:id="@+id/çıkışButon"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="64dp"
+        android:onClick="butonOnClick2"
+        android:text="çıkış yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Kayıtbuton"
+        app:layout_constraintStart_toStartOf="@+id/Kayıtbuton" />
+
+    <Button
+        android:id="@+id/pieChartButon"
+        android:onClick="pieChartOnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Pie Chart"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

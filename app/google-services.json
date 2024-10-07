@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "920456176587",
+    "project_id": "yillik-izin-takip-uygulamasi",
+    "storage_bucket": "yillik-izin-takip-uygulamasi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:920456176587:android:9a2161698f79a175f40c4e",
+        "android_client_info": {
+          "package_name": "com.ezgiyilmaz.yllkzintakipuygulamas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1euj1qsig43L28mm9Hy7QFrA21KNW4SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
